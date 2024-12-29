@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F2E8C6; /* Warna latar belakang utama */
+    color: #800000; /* Warna teks utama */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Memusatkan konten secara vertikal */
+    height: 100vh; /* Mengatur tinggi body agar 100% dari viewport */
+}
+
+.container {
+    text-align: center;
+    background-color: #DAD4B5; /* Warna latar belakang kontainer */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 90%; /* Lebar kontainer responsif */
+    max-width: 600px; /* Lebar maksimum untuk desktop */
+    margin: 0 auto; /* Memastikan kontainer berada di tengah */
+}
+
+.logo img {
+    max-width: 30%; /* Logo responsif */
+    height: auto; /* Menjaga rasio aspek logo */
+    margin-bottom: 5px; /* Jarak antara logo dan video */
+}
+
+video {
+    width: 100%; /* Video responsif */
+    border-radius: 10px;
+}
+
+footer {
+    margin-top: 5px;
+    font-size: 0.7rem; /* Mengatur ukuran font menjadi lebih kecil */
+    color: #800000; /* Warna teks footer */
+}
+
+/* Media Queries untuk Responsivitas */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Padding untuk perangkat kecil */
+    }
+
+    .container {
+        padding: 15px; /* Padding kontainer untuk perangkat kecil */
+    }
+}
